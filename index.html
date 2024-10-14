@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora iOS Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1 class="text-center my-4">Daniela's Calculator</h1>
+        <h2 id="info" class="grande" title="Info sobre el número">Info sobre el número</h2>
+        <input type="text" id="inputNumero" placeholder="0">
+
+        <div class="botones">
+            <button class="boton gris" id="ac" onclick="resetear()">AC</button>
+            <button class="boton gris" id="modulo" onclick="mod()">±</button>
+            <button class="boton gris" id="percent" onclick="percent()">%</button>
+            <button class="boton naranja" id="division" onclick="setOperacion('/')">÷</button>
+
+            <button class="boton negro" onclick="agregarNumero(7)">7</button>
+            <button class="boton negro" onclick="agregarNumero(8)">8</button>
+            <button class="boton negro" onclick="agregarNumero(9)">9</button>
+            <button class="boton naranja" id="multiplicacion" onclick="setOperacion('*')">×</button>
+
+            <button class="boton negro" onclick="agregarNumero(4)">4</button>
+            <button class="boton negro" onclick="agregarNumero(5)">5</button>
+            <button class="boton negro" onclick="agregarNumero(6)">6</button>
+            <button class="boton naranja" id="resta" onclick="setOperacion('-')">−</button>
+
+            <button class="boton negro" onclick="agregarNumero(1)">1</button>
+            <button class="boton negro" onclick="agregarNumero(2)">2</button>
+            <button class="boton negro" onclick="agregarNumero(3)">3</button>
+            <button class="boton naranja" id="suma" onclick="setOperacion('+')">+</button>
+
+            <button class="boton negro grande" onclick="agregarNumero(0)">0</button>
+            <button class="boton negro" onclick="agregarPunto()">.</button>
+            <button class="boton naranja" id="igual" onclick="calcular()">=</button>
+
+            <button class="boton gris" id="raizCuadrada" onclick="raizCuadrada()">√</button>
+            <button class="boton gris" id="potencia" onclick="potencia()">x^n</button>
+            <button class="boton gris" id="factorial" onclick="fact()">n!</button>
+            <button class="boton gris" id="media" onclick="media()">Media</button>
+
+            <button class="boton gris boton-grande" id="sumatorio" onclick="sumatorio()">Sumatorio</button>
+            <button class="boton gris boton-grande" id="ordenar" onclick="ordenar()">Ordenar</button>
+            <button class="boton gris boton-grande" id="revertir" onclick="revertir()">Revertir</button>
+            <button class="boton gris boton-grande" id="quitar" onclick="quitarElemento()">Quitar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
